@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { montserrat } from "./fonts";
 import "./globals.css";
 import ClientNavbarWrapper from "./ClientNavbarWrapper";
 
@@ -80,7 +81,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
         style={{ background: '#fff', minHeight: '100vh' }}
       >
         {/* Navigation Bar */}

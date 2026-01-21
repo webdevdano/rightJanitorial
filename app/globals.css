@@ -1,3 +1,14 @@
+/* Reveal on scroll animation */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+  will-change: opacity, transform;
+}
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: none;
+}
 /* Highlight green for accessibility */
 .highlight-green {
   color: var(--secondary-green) !important;

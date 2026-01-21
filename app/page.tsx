@@ -1,8 +1,12 @@
+
+"use client";
 import React from "react";
 import Image from "next/image";
+import useRevealOnScroll from "./useRevealOnScroll";
 
 
 export default function HomePage() {
+  useRevealOnScroll();
   return (
     <>
       {/* Hero Section */}
@@ -19,7 +23,7 @@ export default function HomePage() {
       </section>
 
       {/* Service Highlights */}
-      <section className="service-highlights">
+      <section className="service-highlights reveal-on-scroll">
         <ServiceCard
           icon="/window.svg"
           title="Residential Cleaning"
@@ -38,12 +42,12 @@ export default function HomePage() {
       </section>
 
       {/* Local Focus & Trust */}
-      <section className="local-focus">
+      <section className="local-focus reveal-on-scroll">
         Serving Perris, CA and all surrounding communities within a 30-mile radius: Menifee, Moreno Valley, Riverside, Lake Elsinore, Hemet, and more!
       </section>
 
       {/* Contact Info */}
-      <section className="contact-info card">
+      <section className="contact-info card reveal-on-scroll">
         <h3>Contact Us</h3>
         <div><strong>Phone:</strong> <a href="tel:+14354145403">(435) 414-5403</a></div>
         <div><strong>Email:</strong> <a href="mailto:rightjanitorialservice@gmail.com">rightjanitorialservice@gmail.com</a></div>
