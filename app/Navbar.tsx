@@ -4,17 +4,34 @@ import React from "react";
 
 export default function Navbar() {
   return (
-    <nav style={{
-      display: "flex",
-      justifyContent: "center",
-      gap: "2rem",
-      padding: "1.5rem 0",
-      background: "#fff",
-      borderBottom: "1px solid #e0e0e0"
-    }}>
-      <Link href="/" style={{ color: "#0070f3", fontWeight: 600 }}>Home</Link>
-      <Link href="/about" style={{ color: "#009e60", fontWeight: 600 }}>About</Link>
-      <Link href="/gallery" style={{ color: "#0070f3", fontWeight: 600 }}>Gallery</Link>
+    <nav className="w-full flex justify-center py-8">
+      <div
+        className="relative flex gap-8 px-8 py-3 rounded-full bg-white/30 backdrop-blur-xl shadow-xl border border-white/40 ring-1 ring-gray-200/40 overflow-hidden group"
+        style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.10)' }}
+      >
+        {/* Shine effect */}
+        <span
+          className="pointer-events-none absolute left-[-75%] top-0 h-full w-1/2 opacity-0 group-hover:opacity-100 group-hover:animate-shine"
+          style={{
+            background: 'linear-gradient(120deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.0) 100%)',
+            filter: 'blur(2px)',
+          }}
+        />
+        <Link href="/" className="text-blue-600 font-semibold hover:text-green-600 transition-colors">Home</Link>
+        <Link href="/about" className="text-green-600 font-semibold hover:text-blue-600 transition-colors">About</Link>
+        <Link href="/gallery" className="text-blue-600 font-semibold hover:text-green-600 transition-colors">Gallery</Link>
+      </div>
+      <style jsx global>{`
+        @keyframes shine {
+          0% { left: -75%; opacity: 0; }
+          20% { opacity: 1; }
+          60% { left: 110%; opacity: 1; }
+          100% { left: 110%; opacity: 0; }
+        }
+        .group:hover .group-hover\:animate-shine {
+          animation: shine 1.1s cubic-bezier(.4,0,.2,1);
+        }
+      `}</style>
     </nav>
   );
 }

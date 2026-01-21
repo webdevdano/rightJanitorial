@@ -82,7 +82,10 @@ export default function RootLayout({
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
-        style={{ background: '#fff', minHeight: '100vh' }}
+        style={{
+          background: 'linear-gradient(135deg, #ada996 0%, #f2f2f2 40%, #dbdbdb 80%, #eaeaea 100%)',
+          minHeight: '100vh'
+        }}
       >
         {/* Navigation Bar */}
         <ClientNavbarWrapper />
