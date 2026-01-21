@@ -7,7 +7,7 @@ export default function ClientNavbarWrapper() {
   return (
     <>
       <AnnouncementBar />
-      <div style={{ maxWidth: 1200, margin: "0 auto", marginTop: '0.75rem' }}>
+      <div className="mt-3 md:mt-4" style={{ maxWidth: 1200, margin: "0 auto" }}>
         <Navbar />
       </div>
     </>
