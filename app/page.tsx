@@ -23,7 +23,7 @@ export default function HomePage() {
       </section>
 
       {/* Service Highlights */}
-      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-14 reveal-on-scroll">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto mb-14 max-w-3xl reveal-on-scroll">
         <ServiceCard
           icon="/window.svg"
           title="Residential Cleaning"
@@ -42,7 +42,7 @@ export default function HomePage() {
       </section>
 
       {/* Local Focus & Trust */}
-      <section className="w-full bg-[#e6f7f1] rounded-2xl py-10 px-6 text-center mb-12 font-semibold text-lg reveal-on-scroll">
+      <section className="bg-[#e6f7f1] rounded-2xl shadow-lg py-10 px-6 text-center mx-auto mb-12 max-w-2xl font-semibold text-lg reveal-on-scroll">
         Serving Perris, CA and all surrounding communities within a 30-mile radius: Menifee, Moreno Valley, Riverside, Lake Elsinore, Hemet, and more!
       </section>
 
