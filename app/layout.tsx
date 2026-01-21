@@ -40,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="overflow-x-hidden">
       <head>
+        <link rel="icon" type="image/jpeg" href="/justright1.jpg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -81,14 +82,14 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased min-h-screen flex flex-col overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased min-h-screen flex flex-col`}
         style={{
           background: 'linear-gradient(135deg, #ada996 0%, #f2f2f2 40%, #dbdbdb 80%, #eaeaea 100%)',
         }}
       >
         {/* Navigation Bar */}
         <ClientNavbarWrapper />
-        <main className="flex-grow w-full px-4 py-8">
+        <main className="flex-grow w-full">
           {children}
         </main>
       </body>

@@ -11,8 +11,8 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section (removed image, keep headline and CTA) */}
-      <section className="w-screen bg-gradient-to-br from-[#f8fbff] to-[#e6f7f1] rounded-2xl shadow-lg mb-12 pt-12 pb-8 flex flex-col items-center justify-center relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] max-w-none">
-        <div className="flex flex-col items-center max-w-2xl w-full text-center mx-auto px-4">
+      <section className="w-full bg-gradient-to-br from-[#f8fbff] to-[#e6f7f1] rounded-2xl shadow-lg mb-12 pt-12 pb-8 flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center w-full text-center px-4">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-zinc-800 tracking-tight">Just Right Janitorial Services</h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Perris, CA & Southern California</h2>
           <p className="mb-6 text-lg text-zinc-700 font-medium">
@@ -23,7 +23,7 @@ export default function HomePage() {
       </section>
 
       {/* Service Highlights */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto mb-14 max-w-3xl reveal-on-scroll">
+      <section className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-14 reveal-on-scroll">
         <ServiceCard
           icon="/window.svg"
           title="Residential Cleaning"
@@ -42,7 +42,7 @@ export default function HomePage() {
       </section>
 
       {/* Local Focus & Trust */}
-      <section className="bg-[#e6f7f1] rounded-2xl py-10 px-6 text-center mx-auto mb-12 max-w-2xl font-semibold text-lg reveal-on-scroll">
+      <section className="w-full bg-[#e6f7f1] rounded-2xl py-10 px-6 text-center mb-12 font-semibold text-lg reveal-on-scroll">
         Serving Perris, CA and all surrounding communities within a 30-mile radius: Menifee, Moreno Valley, Riverside, Lake Elsinore, Hemet, and more!
       </section>
 
