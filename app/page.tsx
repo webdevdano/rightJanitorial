@@ -13,12 +13,12 @@ export default function HomePage() {
       <section className="hero-section">
         <div className="hero-content">
           <Image className="responsive-img" src="/JustRightJanitorial.jpg" alt="Just Right Janitorial cleaning team" width={520} height={260} priority />
-          <h1>Just Right Janitorial</h1>
+          <h1>Just Right Janitorial Services</h1>
           <h2>Professional Cleaning Services in Perris, CA & Southern California</h2>
           <p>
             Sparkling clean homes and businesses within a 30-mile radius of Perris, CA. Trusted, local, and eco-friendly janitorial solutions for your peace of mind.
           </p>
-          <a className="cta-btn" href="tel:+14354145403">Get a Free Quote</a>
+          <a className="cta-btn" href="tel:+14354145403">Call for  Free Quote</a>
         </div>
       </section>
 

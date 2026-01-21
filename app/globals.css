@@ -11,13 +11,13 @@
 }
 /* Highlight green for accessibility */
 .highlight-green {
-  color: var(--secondary-green) !important;
+  color: var(--secondary-green);
   font-weight: 800;
   letter-spacing: 0.01em;
 }
 /* Local focus section color for brand emphasis */
 .local-focus {
-  color: var(--secondary-green) !important;
+  color: var(--secondary-green);
   font-weight: 700;
   font-size: 1.25rem;
 }
