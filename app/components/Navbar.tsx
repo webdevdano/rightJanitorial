@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <nav className="w-full flex justify-center py-8">
       <div
-        className="relative flex items-center justify-between gap-8 px-8 py-3 rounded-full bg-white/30 backdrop-blur-xl shadow-xl border border-white/40 ring-1 ring-gray-200/40 overflow-hidden group max-w-4xl w-full"
+        className="relative flex items-center justify-between gap-8 px-8 py-3 rounded-full bg-white/30 backdrop-blur-xl shadow-xl border border-white/40 ring-1 ring-gray-200/40 overflow-x-auto whitespace-nowrap group max-w-4xl w-full scrollbar-hide"
         style={{ boxShadow: '0 8px 32px 0 rgba(31, 38, 135, 0.10)' }}
       >
         {/* Logo on the left */}
@@ -15,7 +15,7 @@ export default function Navbar() {
           <span className="text-2xl font-bold text-blue-700 tracking-tight">Just Right Janitorial Services</span>
         </Link>
         {/* Nav links on the right */}
-        <div className="flex gap-8 ml-auto">
+        <div className="flex gap-8 ml-auto min-w-max">
           <Link href="/" className="text-blue-600 font-semibold hover:text-green-600 transition-colors">Home</Link>
           <Link href="/about" className="text-green-600 font-semibold hover:text-blue-600 transition-colors">About</Link>
           <Link href="/gallery" className="text-blue-600 font-semibold hover:text-green-600 transition-colors">Gallery</Link>
@@ -38,6 +38,14 @@ export default function Navbar() {
         }
         .group:hover .group-hover\:animate-shine {
           animation: shine 1.1s cubic-bezier(.4,0,.2,1);
+        }
+        /* Hide scrollbar for all browsers */
+        .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+        }
+        .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
         }
       `}</style>
     </nav>
