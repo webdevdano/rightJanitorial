@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-x-hidden">
       <head>
         <script
           type="application/ld+json"
@@ -81,15 +81,14 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased min-h-screen flex flex-col overflow-x-hidden`}
         style={{
           background: 'linear-gradient(135deg, #ada996 0%, #f2f2f2 40%, #dbdbdb 80%, #eaeaea 100%)',
-          minHeight: '100vh'
         }}
       >
         {/* Navigation Bar */}
         <ClientNavbarWrapper />
-        <main style={{ maxWidth: 1200, margin: '0 auto', padding: '2rem 1rem' }}>
+        <main className="flex-grow w-full px-4 py-8">
           {children}
         </main>
       </body>

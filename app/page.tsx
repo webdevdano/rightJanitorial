@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import Image from "next/image";
@@ -11,16 +10,15 @@ export default function HomePage() {
   useRevealOnScroll();
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#f8fbff] to-[#e6f7f1] rounded-3xl shadow-lg mb-12 p-12 flex items-center justify-center">
-        <div className="flex flex-col items-center max-w-xl w-full text-center">
-          <Image className="w-full h-auto rounded-xl mb-4" src="/JustRightJanitorial.jpg" alt="Just Right Janitorial cleaning team" width={520} height={260} priority />
-          <h1 className="text-3xl font-bold mb-2">Just Right Janitorial Services</h1>
-          <h2 className="text-xl font-semibold mb-4">Professional Cleaning Services in Perris, CA & Southern California</h2>
-          <p className="mb-4 text-base text-gray-700">
+      {/* Hero Section (removed image, keep headline and CTA) */}
+      <section className="w-screen bg-gradient-to-br from-[#f8fbff] to-[#e6f7f1] rounded-2xl shadow-lg mb-12 pt-12 pb-8 flex flex-col items-center justify-center relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] max-w-none">
+        <div className="flex flex-col items-center max-w-2xl w-full text-center mx-auto px-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-zinc-800 tracking-tight">Just Right Janitorial Services</h1>
+          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Perris, CA & Southern California</h2>
+          <p className="mb-6 text-lg text-zinc-700 font-medium">
             Sparkling clean homes and businesses within a 30-mile radius of Perris, CA. Trusted, local, and eco-friendly janitorial solutions for your peace of mind.
           </p>
-          <a className="inline-block bg-blue-600 hover:bg-green-600 text-white font-bold text-lg py-3 px-8 rounded-full shadow-md mt-2 transition-colors duration-200" href="tel:+14354145403">Call for Free Quote</a>
+          <a className="inline-block bg-blue-600 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg transition-colors duration-200" href="tel:+14354145403">Call for Free Quote</a>
         </div>
       </section>
 
@@ -48,7 +46,7 @@ export default function HomePage() {
         Serving Perris, CA and all surrounding communities within a 30-mile radius: Menifee, Moreno Valley, Riverside, Lake Elsinore, Hemet, and more!
       </section>
 
-      <Footer/>
+      <Footer />
     </>
   );
 }
