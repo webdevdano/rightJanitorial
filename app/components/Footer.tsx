@@ -19,7 +19,7 @@ export default function Footer() {
           <div className="w-full max-w-xl flex flex-col items-center md:items-start">
             <h3 className="text-2xl font-bold mb-4 text-zinc-800">Contact Us</h3>
             <div className="mb-2 text-lg"><strong>Phone:</strong> <a className="text-blue-600 hover:underline hover:text-green-600" href="tel:+14354145403">(435) 414-5403</a></div>
-            <div className="mb-2 text-lg"><strong>Email:</strong> <a className="text-blue-600 hover:underline hover:text-green-600" href="mailto:rightjanitorialservice@gmail.com">rightjanitorialservice@gmail.com</a></div>
+            <div className="mb-2 text-lg"><strong>Email:</strong> <a className="text-blue-600 hover:underline hover:text-green-600" href="mailto:sales@rightjanitorial.com">sales@rightjanitorial.com</a></div>
             <div className="text-lg"><strong>Service Area:</strong> <span className="text-green-600 font-semibold">Perris, CA & Southern California</span></div>
           </div>
         </section>

@@ -16,7 +16,7 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-zinc-800 tracking-tight">Just Right Janitorial Services</h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Perris, CA & Southern California</h2>
           <p className="mb-6 text-lg text-zinc-700 font-medium">
-            Sparkling clean homes and businesses within a 30-mile radius of Perris, CA. Trusted, local, and eco-friendly janitorial solutions for your peace of mind.
+            Sparkling clean businesses within a 30-mile radius of Perris, CA. Trusted, local, and eco-friendly janitorial solutions for your peace of mind.
           </p>
           <a className="inline-block bg-blue-600 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg transition-colors duration-200" href="tel:+14354145403">Call for Free Quote</a>
         </div>
@@ -26,8 +26,8 @@ export default function HomePage() {
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto mb-14 max-w-3xl reveal-on-scroll">
         <ServiceCard
           icon="/window.svg"
-          title="Residential Cleaning"
-          desc="Deep cleans, move-in/move-out, and recurring home cleaning tailored to your needs."
+          title="Commitment to Excellence"
+          desc="Dedicated to delivering top-notch cleaning services tailored to your needs."
         />
         <ServiceCard
           icon="/file.svg"
