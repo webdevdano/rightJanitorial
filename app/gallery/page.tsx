@@ -63,7 +63,7 @@ export default function GalleryPage() {
           {galleryImages.map((img, idx) => (
             <div
               key={idx}
-              style={{ background: "#f8fbff", borderRadius: 12, padding: 16, boxShadow: "0 2px 12px rgba(0,112,243,0.06)", textAlign: "center", cursor: "pointer" }}
+              style={{ cursor: "pointer" }}
               onClick={() => setPreviewIdx(idx)}
             >
               <Image src={img.src} alt={img.alt} width={200} height={120} style={{ borderRadius: 8, marginBottom: 12, objectFit: "cover" }} />
