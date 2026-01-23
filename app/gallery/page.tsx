@@ -21,23 +21,55 @@ export default function GalleryPage() {
   return (
     <>
     <section style={{ maxWidth: 900, margin: "0 auto" }}>
-      <h1 style={{ color: "#0070f3", fontSize: 32, textAlign: "center", marginBottom: 32 }}>Gallery</h1>
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-        gap: 32,
-        justifyItems: "center",
-        marginBottom: 64
-      }}>
-        {galleryImages.map((img, idx) => (
-          <div
-            key={idx}
-            style={{ background: "#f8fbff", borderRadius: 12, padding: 16, boxShadow: "0 2px 12px rgba(0,112,243,0.06)", textAlign: "center", cursor: "pointer" }}
-            onClick={() => setPreviewIdx(idx)}
-          >
-            <Image src={img.src} alt={img.alt} width={200} height={120} style={{ borderRadius: 8, marginBottom: 12, objectFit: "cover" }} />
-          </div>
-        ))}
+      <div
+        className="gallery-pill mx-auto mb-8 px-8 py-3 rounded-full bg-white/30 backdrop-blur-xl shadow-lg border border-white/40 ring-1 ring-blue-200/40 text-blue-700 hover:text-green-600 text-2xl font-extrabold font-montserrat text-center relative overflow-hidden group transition-colors duration-200"
+        style={{ maxWidth: 320 }}
+      >
+        Gallery
+        <span
+          className="pointer-events-none absolute left-[-75%] top-0 h-full w-1/2 opacity-0 group-hover:opacity-100 group-hover:animate-shine"
+          style={{
+            background: 'linear-gradient(120deg, rgba(255,255,255,0.0) 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0.0) 100%)',
+            filter: 'blur(2px)',
+          }}
+        />
+        <style jsx>{`
+          @keyframes shine {
+            0% { left: -75%; opacity: 0; }
+            20% { opacity: 1; }
+            60% { left: 110%; opacity: 1; }
+            100% { left: 110%; opacity: 0; }
+          }
+          .group:hover {
+            color: #16a34a !important; /* Tailwind green-600 */
+          }
+          .group:hover .group-hover\\:animate-shine {
+            animation: shine 1.1s cubic-bezier(.4,0,.2,1);
+          }
+        `}</style>
+      </div>
+      <div
+        className="bg-linear-to-br from-[#f8fbff] to-[#e6f7f1] rounded-3xl shadow-xl px-8 py-10 flex flex-col items-center"
+        style={{ marginBottom: 64 }}
+      >
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+            gap: 32,
+            justifyItems: "center"
+          }}
+        >
+          {galleryImages.map((img, idx) => (
+            <div
+              key={idx}
+              style={{ background: "#f8fbff", borderRadius: 12, padding: 16, boxShadow: "0 2px 12px rgba(0,112,243,0.06)", textAlign: "center", cursor: "pointer" }}
+              onClick={() => setPreviewIdx(idx)}
+            >
+              <Image src={img.src} alt={img.alt} width={200} height={120} style={{ borderRadius: 8, marginBottom: 12, objectFit: "cover" }} />
+            </div>
+          ))}
+        </div>
       </div>
       {previewIdx !== null && (
         <div
