@@ -1,13 +1,16 @@
 import React from "react";
 import Footer from "../components/Footer";
 import HeroSlideshow from "../components/HeroSlideshow";
+import Image from "next/image";
+
+
 export default function AboutPage() {
   return (
     <>
     <section className="max-w-2xl mx-auto text-center px-4 py-16">
       <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-6 font-montserrat">About Just Right Janitorial</h1>
       <div className="w-full max-w-xs md:max-w-sm xl:max-w-md mx-auto mb-6">
-        <HeroSlideshow className="rounded-xl aspect-[3/5]" />
+        <Image src="/justright1.jpg" alt="About Just Right Janitorial" width={600} height={400} className="rounded-lg shadow-md" />
       </div>
       <p className="text-xl text-gray-800 mb-8">
         Just Right Janitorial Service is a family owned company. We provide quality cleaning
@@ -23,7 +26,7 @@ export default function AboutPage() {
       <div className="mt-8">
           <div className="flex flex-col items-center justify-center">
             <form className="rounded-2xl bg-white/30 backdrop-blur-xl shadow-xl border border-white/40 ring-1 ring-green-200/40 px-8 py-7 flex flex-col items-center max-w-md mx-auto w-full transition-all duration-300 space-y-4">
-              <h2 className="text-2xl md:text-3xl font-bold font-montserrat text-blue-700 mb-4 text-center">Request a FREE Es</h2>
+              <h2 className="text-2xl md:text-3xl font-bold font-montserrat text-blue-700 mb-4 text-center">Request a FREE Estimate</h2>
               <input type="text" name="name" placeholder="Name" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" />
               <input type="tel" name="phone" placeholder="Phone" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" />
               <input type="email" name="email" placeholder="Email" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" />
