@@ -13,7 +13,7 @@ export default function HomePage() {
       {/* Hero Section with Slideshow */}
       <section className="w-full bg-linear-to-br from-[#f8fbff] to-[#e6f7f1] rounded-2xl shadow-lg mb-12 pt-8 pb-8 flex flex-col items-center justify-center">
         <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
-          <div className="flex-1 flex flex-col justify-center items-start text-left md:pr-6">
+          <div className="flex-1 flex flex-col justify-center items-center text-center md:items-start md:text-left md:pr-6">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-zinc-800 tracking-tight">Just Right Janitorial Services</h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Perris, CA & Southern California</h2>
             <p className="mb-6 text-lg text-zinc-700 font-medium">
