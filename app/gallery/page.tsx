@@ -2,17 +2,15 @@ import React from "react";
 import Image from "next/image";
 
 const galleryImages = [
-  { src: "/rightJanitorial-Images/Auditorium.JPEG", alt: "Auditorium" },
-  { src: "/rightJanitorial-Images/Auditorium1.JPEG", alt: "Auditorium 1" },
-  { src: "/rightJanitorial-Images/Auditorium2.JPEG", alt: "Auditorium 2" },
-  { src: "/rightJanitorial-Images/Auditorium3.JPEG", alt: "Auditorium 3" },
   { src: "/rightJanitorial-Images/ClassroomGrid2Image.JPEG", alt: "Classroom Grid 2" },
   { src: "/rightJanitorial-Images/ClassroomGrid4Image.JPEG", alt: "Classroom Grid 4" },
   { src: "/rightJanitorial-Images/ClassroomGrid4Image2.PNG", alt: "Classroom Grid 4 (PNG)" },
+  { src: "/rightJanitorial-Images/Auditorium3.JPEG", alt: "Auditorium 3" },
   { src: "/rightJanitorial-Images/Kitchen1.jpeg", alt: "Kitchen 1" },
   { src: "/rightJanitorial-Images/Kitchen2.JPEG", alt: "Kitchen 2" },
   { src: "/rightJanitorial-Images/Kitchen3.JPEG", alt: "Kitchen 3" },
-  { src: "/rightJanitorial-Images/Moproom.JPEG", alt: "Mop Room" }
+  { src: "/rightJanitorial-Images/Moproom.JPEG", alt: "Mop Room" },
+  { src: "/rightJanitorial-Images/Auditorium2.JPEG", alt: "Auditorium 2" },
 ];
 
 export default function GalleryPage() {
