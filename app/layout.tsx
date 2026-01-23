@@ -89,7 +89,7 @@ export default function RootLayout({
       >
         {/* Navigation Bar */}
         <ClientNavbarWrapper />
-        <main className="flex-grow w-full">
+        <main className="grow w-full">
           {children}
         </main>
       </body>

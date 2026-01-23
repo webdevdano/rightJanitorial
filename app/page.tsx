@@ -1,24 +1,29 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import useRevealOnScroll from "./components/useRevealOnScroll";
 import Footer from "./components/Footer";
 import ServiceCard from "./components/ServiceCard";
+import HeroSlideshow from "./components/HeroSlideshow";
 
 
 export default function HomePage() {
   useRevealOnScroll();
   return (
     <>
-      {/* Hero Section (removed image, keep headline and CTA) */}
-      <section className="w-full bg-gradient-to-br from-[#f8fbff] to-[#e6f7f1] rounded-2xl shadow-lg mb-12 pt-12 pb-8 flex flex-col items-center justify-center">
-        <div className="flex flex-col items-center w-full text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-zinc-800 tracking-tight">Just Right Janitorial Services</h1>
-          <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Perris, CA & Southern California</h2>
-          <p className="mb-6 text-lg text-zinc-700 font-medium">
-            Sparkling clean businesses within a 30-mile radius of Perris, CA. Trusted, local, and eco-friendly janitorial solutions for your peace of mind.
-          </p>
-          <a className="inline-block bg-blue-600 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg transition-colors duration-200" href="tel:+14354145403">Call for Free Quote</a>
+      {/* Hero Section with Slideshow */}
+      <section className="w-full bg-linear-to-br from-[#f8fbff] to-[#e6f7f1] rounded-2xl shadow-lg mb-12 pt-8 pb-8 flex flex-col items-center justify-center">
+        <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
+          <div className="flex-1 flex flex-col justify-center items-start text-left md:pr-6">
+            <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-zinc-800 tracking-tight">Just Right Janitorial Services</h1>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Perris, CA & Southern California</h2>
+            <p className="mb-6 text-lg text-zinc-700 font-medium">
+              Sparkling clean businesses within a 30-mile radius of Perris, CA. Trusted, local, and eco-friendly janitorial solutions for your peace of mind.
+            </p>
+            <a className="inline-block bg-blue-600 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg transition-colors duration-200" href="tel:+14354145403">Call for Free Quote</a>
+          </div>
+          <div className="flex-1 flex justify-end items-center w-full max-w-md md:max-w-xs lg:max-w-sm xl:max-w-md">
+            <HeroSlideshow className="h-[620px] w-full max-w-xs md:max-w-sm xl:max-w-md aspect-[4/5]" />
+          </div>
         </div>
       </section>
 
@@ -36,8 +41,8 @@ export default function HomePage() {
         />
         <ServiceCard
           icon="/globe.svg"
-          title="Eco-Friendly Solutions"
-          desc="We use safe, green products for a healthier home, business, and environment."
+          title="Safer, Eco-Friendly Solutions"
+          desc="We use safe, green products for a healthier classroom, business, and environment."
         />
       </section>
 
