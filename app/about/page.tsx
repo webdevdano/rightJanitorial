@@ -4,7 +4,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 
 export default function AboutPage() {
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
     console.log("Form submitted");
   };
