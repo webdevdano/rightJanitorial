@@ -9,7 +9,7 @@ export default function AboutPage() {
       <p className="text-xl text-gray-800 mb-8">
         Just Right Janitorial Service is a family owned company. We provide quality cleaning
         services to the Inland Empire community. We specialize in office and commercial cleaning.
-        We provide all equipment, supplies and the know-how!
+        We provide all equipment, supplies and know-how!
       </p>
       <div className="bg-green-50 rounded-lg px-6 py-7 text-green-700 font-semibold mb-10">
         <span className="block text-xl mb-2 font-bold">Our Mission</span>
