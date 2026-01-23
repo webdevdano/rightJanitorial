@@ -21,8 +21,8 @@ export default function HomePage() {
             </p>
             <a className="inline-block bg-blue-600 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg transition-colors duration-200" href="tel:+14354145403">Call for Free Quote</a>
           </div>
-          <div className="flex-1 flex justify-end items-center w-full max-w-md md:max-w-xs lg:max-w-sm xl:max-w-md">
-            <HeroSlideshow className="h-[620px] w-full max-w-xs md:max-w-sm xl:max-w-md aspect-[4/5]" />
+          <div className="flex-1 flex justify-center md:justify-end items-center w-full max-w-md md:max-w-xs lg:max-w-sm xl:max-w-md">
+            <HeroSlideshow className="h-155 w-full max-w-xs md:max-w-sm xl:max-w-md aspect-4/5" />
           </div>
         </div>
       </section>
