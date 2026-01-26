@@ -84,7 +84,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} antialiased min-h-screen flex flex-col`}
         style={{
-          background: 'linear-gradient(135deg, #ada996 0%, #f2f2f2 40%, #dbdbdb 80%, #eaeaea 100%)',
+          background: '#eaf5fb',
         }}
       >
         {/* Navigation Bar */}

@@ -6,7 +6,9 @@ const images = [
   "/rightJanitorial-Images/Auditorium.JPEG",
   "/rightJanitorial-Images/Auditorium1.JPEG",
   "/rightJanitorial-Images/Auditorium2.JPEG",
-  "/rightJanitorial-Images/Auditorium3.JPEG"
+  "/rightJanitorial-Images/Auditorium3.JPEG",
+  '/rightJanitorial-Images/Kitchen2.JPEG',
+  '/rightJanitorial-Images/Kitchen3.JPEG',
 ];
 
 export default function HeroSlideshow({ className = "", interval = 5000 }) {

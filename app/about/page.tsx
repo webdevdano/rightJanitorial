@@ -13,7 +13,7 @@ export default function AboutPage() {
     <>
     <section className="max-w-5xl mx-auto px-4 py-16">
       {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-6 font-montserrat text-center ">About Just Right Janitorial</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-6 font-montserrat text-center ">About Us</h1>
       
       {/* Top Row: Image and Description */}
       <div className="mb-8">
@@ -22,9 +22,10 @@ export default function AboutPage() {
             <Image src="/justright1.jpg" alt="About Just Right Janitorial" width={580} height={400} className="rounded-lg" />
           </div>
           <p className="text-xl text-gray-800 text-left m-0 flex-1 mt-4 md:mt-0">
-            Just Right Janitorial Service is a family owned company.<br /> We provide quality cleaning
-            services to the Inland Empire community.<br /> We specialize in office and commercial cleaning. <br/>
-            We provide all equipment, supplies and know-how!
+            At Just Right Janitorial, we provide reliable, detail-oriented cleaning services designed to keep your space spotless,
+            safe, and welcoming.<br/> We take pride in delivering consistent results, using proven cleaning methods and professional-grade products.<br/>
+            Our team understands that a clean environment matters—for productivity, health, and first impressions.<br/> That’s why we approach every
+            job with care, integrity, and a commitment to doing the job just right every time.
           </p>
         </div>
       </div>
@@ -43,7 +44,7 @@ export default function AboutPage() {
             <span className="block text-xl mb-2 font-bold">Our Pros</span>
             <ul className="list-disc pl-6 text-lg text-green-800 space-y-2">
               <li>Professional Trained Staff</li>
-              <li>Service Guaranteed</li>
+              <li>100% Service Guaranteed</li>
               <li>Customer Service Available for Special Request</li>
               <li>After Business Hours</li>
               <li>One Time Deep Cleaning Service Available</li>
@@ -55,7 +56,7 @@ export default function AboutPage() {
         </div>
 
         {/* Right Column: Form */}
-        <div className="flex-1 flex flex-col items-center justify-start">
+        <div className="flex-1 flex flex-col items-center justify-start" id="quote-form">
           <div className="rounded-2xl bg-white/30 backdrop-blur-xl shadow-xl border border-white/40 ring-1 ring-green-200/40 px-8 py-7 flex flex-col items-center w-full max-w-md transition-all duration-300 space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold font-montserrat text-blue-700 mb-4 text-center">Request a free estimate <br /> or inquire for more information</h2>
             <input type="text" name="name" placeholder="Name" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" />
@@ -63,17 +64,6 @@ export default function AboutPage() {
             <input type="email" name="email" placeholder="Email" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" />
             <input type="text" name="company" placeholder="Company" className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" />
             <input type="text" name="zip" placeholder="Zip Code" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" />
-            <select name="howOften" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300">
-              <option value="">How Often?</option>
-              <option value="one-time">One time service</option>
-              <option value="1x">1x a week</option>
-              <option value="2x">2x a week</option>
-              <option value="3x">3x a week</option>
-              <option value="4x">4x a week</option>
-              <option value="5x">5x a week</option>
-              <option value="6x">6x a week</option>
-              <option value="7x">7x a week</option>
-            </select>
             <button onClick={handleSubmit} className="w-full bg-green-600 hover:bg-blue-600 text-white font-bold py-2 rounded-lg transition-colors duration-150 mt-2">Submit</button>
           </div>
         </div>
