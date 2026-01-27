@@ -9,11 +9,12 @@ export default function AboutPage() {
     phone: "",
     email: "",
     company: "",
-    zip: ""
+    zip: "",
+    message: ""
   });
   const [status, setStatus] = useState<{ success: boolean; message: string } | null>(null);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
@@ -29,7 +30,7 @@ export default function AboutPage() {
       const data = await res.json();
       if (data.success) {
         setStatus({ success: true, message: "Message sent successfully!" });
-        setForm({ name: "", phone: "", email: "", company: "", zip: "" });
+        setForm({ name: "", phone: "", email: "", company: "", zip: "", message: "" });
       } else {
         setStatus({ success: false, message: data.error || "Failed to send message." });
       }
@@ -74,7 +75,7 @@ export default function AboutPage() {
             <ul className="list-disc pl-6 text-lg text-green-800 space-y-2">
               <li>Professional Trained Staff</li>
               <li>100% Service Guaranteed</li>
-              <li>Customer Service Available for Special Request</li>
+              <li>Custom Service Available upon Special Request</li>
               <li>After Business Hours</li>
               <li>One Time Deep Cleaning Service Available</li>
               <li>Move In/Out Cleaning Services</li>
@@ -93,6 +94,7 @@ export default function AboutPage() {
             <input type="email" name="email" placeholder="Email" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" value={form.email} onChange={handleChange} />
             <input type="text" name="company" placeholder="Company" className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" value={form.company} onChange={handleChange} />
             <input type="text" name="zip" placeholder="Zip Code" required className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" value={form.zip} onChange={handleChange} />
+            <textarea name="message" placeholder="How can we help you?" required rows={3} className="w-full px-4 py-2 rounded-lg border border-green-200 bg-white/80 focus:outline-none focus:ring-2 focus:ring-green-300" value={form.message} onChange={handleChange} />
             <button onClick={handleSubmit} className="w-full bg-green-600 hover:bg-blue-600 text-white font-bold py-2 rounded-lg transition-colors duration-150 mt-2">Submit</button>
             {status && <div className={`text-sm mt-2 ${status.success ? 'text-green-600' : 'text-red-600'}`}>{status.message}</div>}
           </div>
