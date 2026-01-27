@@ -51,7 +51,7 @@ export default function RootLayout({
               "image": "/JustRightJanitorial.jpg",
               "@id": "#justrightjanitorial",
               "url": "https://justrightjanitorial.com/",
-              "telephone": "+1-555-123-4567",
+              "telephone": "+1-9515-293-8535",
               "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "123 Clean St",
@@ -74,7 +74,7 @@ export default function RootLayout({
                 },
                 "geoRadius": 48280 // 30 miles in meters
               },
-              "description": "Professional cleaning services for homes and businesses in Perris, CA and surrounding areas. Trusted, local, and reliable janitorial solutions within a 30-mile radius of Perris, Southern California.",
+              "description": "Professional cleaning services for businesses in Riverside County and surrounding areas.",
               "priceRange": "$$",
               "openingHours": "Mo-Sa 08:00-18:00"
             })
