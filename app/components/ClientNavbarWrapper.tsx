@@ -16,13 +16,22 @@ export default function ClientNavbarWrapper() {
           background: "#eaf5fb",
         }}
       >
-        <img
-          src="/rightJanitorial-Images/logo/JRJ.jpeg"
-          alt="JRJ Logo"
-          style={{ width: 120, height: 120, objectFit: 'contain', background: 'transparent' }}
-        />
-        <div className="flex-1">
-          <Navbar />
+        <style>{`
+          @media (max-width: 640px) {
+            .client-navbar-mobile-padding {
+              padding-top: 64px;
+            }
+          }
+        `}</style>
+        <div className="client-navbar-mobile-padding w-full flex items-center gap-4">
+          <img
+            src="/rightJanitorial-Images/logo/JRJ.jpeg"
+            alt="JRJ Logo"
+            style={{ width: 120, height: 120, objectFit: 'contain', background: 'transparent' }}
+          />
+          <div className="flex-1">
+            <Navbar />
+          </div>
         </div>
       </div>
     </>
