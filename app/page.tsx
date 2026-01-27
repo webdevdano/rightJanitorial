@@ -14,7 +14,7 @@ export default function HomePage() {
       <section className="w-full bg-white rounded-2xl shadow-lg mb-12 pt-8 pb-8 flex flex-col items-center justify-center">
         <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 px-4">
           <div className="flex-1 flex flex-col justify-center items-center text-center md:items-start md:text-left md:pr-6">
-            <h1 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Southern California</h1>
+            <h1 className="text-2xl md:text-3xl font-semibold mb-6 text-blue-600">Professional Cleaning in Southern California</h1>
             <p className="mb-6 text-lg text-[#3b7386] font-medium">
               At Just Right Janitorial, professionalism, integrity, and long-term relationships are at the 
               heart of everything we do. When you choose us, you’re choosing a cleaning partner who takes pride in doing the job just right.<br/>
