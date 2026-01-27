@@ -36,7 +36,7 @@ export default function HeroSlideshow({ className = "", interval = 5000 }) {
         />
       ))}
       {/* Guarantee badge overlay */}
-      <div style={{ position: 'absolute', bottom: 16, right: 16, zIndex: 20 }}>
+      <div style={{ position: 'absolute', top: 16, right: 16, zIndex: 20 }}>
         <Image
           src="/rightJanitorial-Images/logo/guarantee.png"
           alt="Guarantee Badge"
