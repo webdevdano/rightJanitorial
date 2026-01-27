@@ -17,7 +17,10 @@ export default function HomePage() {
             <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-black tracking-tight">Just Right Janitorial Services</h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-green-700">Professional Cleaning in Southern California</h2>
             <p className="mb-6 text-lg text-[#3b7386] font-medium">
-              Sparkling clean businesses in Riverside County and surrounding areas. Trusted, local, and eco-friendly janitorial solutions for your peace of mind.
+              At Just Right Janitorial, professionalism, integrity, and long-term relationships are at the 
+              heart of everything we do. When you choose us, you’re choosing a cleaning partner who takes pride in doing the job just right.<br/>
+              That’s why our team is committed to consistent results, attention to detail, and dependable service you can trust. 
+              We work closely with each client to create customized cleaning plans that fit their needs, schedule, and budget.
             </p>
             <a className="inline-block bg-blue-600 hover:bg-green-600 text-white font-bold text-xl py-4 px-10 rounded-full shadow-lg transition-colors duration-200" href="tel:+14354145403">Call for Free Quote</a>
           </div>

@@ -9,6 +9,7 @@ const images = [
   "/rightJanitorial-Images/Auditorium3.JPEG",
   '/rightJanitorial-Images/Kitchen2.JPEG',
   '/rightJanitorial-Images/Kitchen3.JPEG',
+  '/rightJanitorial-Images/restaurant.jpeg',
 ];
 
 export default function HeroSlideshow({ className = "", interval = 5000 }) {
@@ -34,6 +35,16 @@ export default function HeroSlideshow({ className = "", interval = 5000 }) {
           priority={idx === 0}
         />
       ))}
+      {/* Guarantee badge overlay */}
+      <div style={{ position: 'absolute', bottom: 16, right: 16, zIndex: 20 }}>
+        <Image
+          src="/rightJanitorial-Images/logo/guarantee.png"
+          alt="Guarantee Badge"
+          width={80}
+          height={80}
+          style={{ objectFit: 'contain', borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.10)' }}
+        />
+      </div>
     </div>
   );
 }

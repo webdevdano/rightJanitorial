@@ -12,14 +12,14 @@ export default function ClientNavbarWrapper() {
         style={{
           maxWidth: 1200,
           margin: "0 auto",
-          paddingTop: 24,
+          paddingTop: 40,
           background: "#eaf5fb",
         }}
       >
         <img
           src="/rightJanitorial-Images/logo/JRJ.jpeg"
           alt="JRJ Logo"
-          style={{ width: 80, height: 80, objectFit: 'contain', background: 'transparent' }}
+          style={{ width: 120, height: 120, objectFit: 'contain', background: 'transparent' }}
         />
         <div className="flex-1">
           <Navbar />
